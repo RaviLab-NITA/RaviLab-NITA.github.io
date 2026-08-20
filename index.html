@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RAVI Lab at NIT Agartala — Rheology and Advanced Visualization of Interfaces. Research in rheology, multiphase flow, interfacial transport, advanced flow visualization, microfluidics, CFD, process intensification, and biomedical transport." />
+  <meta name="theme-color" content="#0b2239" />
+
+  <title>RAVI Lab | Rheology and Advanced Visualization of Interfaces | NIT Agartala</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand brand-logo" href="#top" aria-label="RAVI Lab home">
+        <img src="assets/RAVI-Lab-logo.png" alt="RAVI Lab — Rheology and Advanced Visualization of Interfaces" />
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#project">Current Project</a>
+        <a href="#publications">Publications</a>
+        <a href="#innovation">Patents</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">RAVI Lab · Department of Chemical Engineering · NIT Agartala</p>
+          <h1>
+            Rheology and Advanced
+            <span class="accent-text">Visualization of Interfaces.</span>
+          </h1>
+          <p class="hero-lead">
+            RAVI Lab investigates how complex fluids flow, deform, interact and transport across
+            interfaces. Our work integrates rheology, advanced flow visualization, multiphase
+            experiments, microfluidics, CFD and multiphysics modelling.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#research">Explore Research</a>
+            <a class="btn btn-secondary" href="assets/Ravi-Prakash-CV.pdf" target="_blank" rel="noopener">View CV</a>
+          </div>
+
+          <div class="profile-strip">
+            <div>
+              <span class="profile-kicker">Principal Investigator</span>
+              <strong>Dr. Ravi Prakash</strong>
+              <span>Assistant Professor (Grade-II)</span>
+            </div>
+            <div class="profile-links">
+              <a href="https://scholar.google.com/citations?user=pQ_QZ_EAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener">Google Scholar ↗</a>
+              <a href="https://orcid.org/0000-0003-1673-9136" target="_blank" rel="noopener">ORCID ↗</a>
+              <a href="https://vidwan.inflibnet.ac.in/profile/711031" target="_blank" rel="noopener">Vidwan ↗</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Abstract visual representing multiphase flow and microfluidics">
+          <div class="visual-panel">
+            <svg class="hero-svg" viewBox="0 0 680 560" role="img" aria-labelledby="heroTitle heroDesc">
+              <title id="heroTitle">Multiphase flow visualization</title>
+              <desc id="heroDesc">Abstract channels, droplets and streamlines representing microfluidics and interfacial transport.</desc>
+
+              <defs>
+                <linearGradient id="fluidA" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#2dd4bf"/>
+                  <stop offset="100%" stop-color="#38bdf8"/>
+                </linearGradient>
+                <linearGradient id="fluidB" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#f59e0b"/>
+                  <stop offset="100%" stop-color="#fb7185"/>
+                </linearGradient>
+                <filter id="softGlow">
+                  <feGaussianBlur stdDeviation="8" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+
+              <rect x="55" y="90" width="570" height="380" rx="56" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+
+              <path d="M110,195 C210,115 325,270 435,180 C505,123 560,150 590,182"
+                    fill="none" stroke="url(#fluidA)" stroke-width="25" stroke-linecap="round" opacity=".9"/>
+              <path d="M110,350 C218,275 315,420 430,332 C495,282 550,300 590,325"
+                    fill="none" stroke="rgba(255,255,255,.16)" stroke-width="28" stroke-linecap="round"/>
+              <path d="M110,350 C218,275 315,420 430,332 C495,282 550,300 590,325"
+                    fill="none" stroke="url(#fluidB)" stroke-width="8" stroke-linecap="round"/>
+
+              <ellipse cx="230" cy="191" rx="55" ry="28" fill="#071a2c" stroke="#6ee7d8" stroke-width="5"/>
+              <ellipse cx="408" cy="198" rx="39" ry="24" fill="#071a2c" stroke="#6ee7d8" stroke-width="5"/>
+              <ellipse cx="280" cy="350" rx="46" ry="27" fill="#071a2c" stroke="#fbbf24" stroke-width="5"/>
+              <ellipse cx="500" cy="323" rx="34" ry="22" fill="#071a2c" stroke="#fb7185" stroke-width="5"/>
+
+              <circle cx="170" cy="133" r="12" fill="#5eead4" filter="url(#softGlow)"/>
+              <circle cx="538" cy="406" r="15" fill="#f59e0b" filter="url(#softGlow)"/>
+              <circle cx="470" cy="120" r="8" fill="#38bdf8"/>
+              <circle cx="145" cy="418" r="8" fill="#fb7185"/>
+
+              <g opacity=".45" fill="none" stroke="#dbeafe" stroke-width="2">
+                <path d="M145 237 C210 270 260 270 315 236"/>
+                <path d="M355 255 C420 280 490 275 548 240"/>
+                <path d="M160 392 C235 433 325 426 390 385"/>
+              </g>
+            </svg>
+
+            <div class="visual-label label-1">
+              <span>01</span>
+              <strong>Rheology & Interfaces</strong>
+            </div>
+            <div class="visual-label label-2">
+              <span>02</span>
+              <strong>Advanced Visualization</strong>
+            </div>
+            <div class="visual-label label-3">
+              <span>03</span>
+              <strong>CFD + Microfluidics</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container stat-grid reveal">
+        <article class="stat-card">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Publications listed in current CV</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Patented / published inventions</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">₹6.96M</span>
+          <span class="stat-label">Smart Micro-emulsion Printing project</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number">2</span>
+          <span class="stat-label">International postdoctoral appointments</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About</p>
+          <h2>Visualizing complex flows from rheology to interfaces.</h2>
+        </div>
+
+        <div class="about-copy reveal">
+          <p>
+            Dr. Ravi Prakash is an Assistant Professor in the Department of Chemical Engineering
+            at the National Institute of Technology Agartala and leads the RAVI Lab
+            (Rheology and Advanced Visualization of Interfaces). His research combines rheology,
+            advanced flow visualization, experimental fluid mechanics, computational fluid dynamics
+            and multiphysics simulations to study transport phenomena in confined and interfacial systems.
+          </p>
+          <p>
+            His work spans liquid–liquid and gas–liquid flows, wettability-controlled hydrodynamics,
+            thin-film formation, miniature reactors, wave–structure interaction and, more recently,
+            porous-media transport and hollow microneedle systems for transdermal drug delivery.
+          </p>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <span>2025–Present</span>
+              <div><strong>NIT Agartala</strong><small>Assistant Professor (Grade-II)</small></div>
+            </div>
+            <div class="timeline-item">
+              <span>2025–2026</span>
+              <div><strong>Loughborough University</strong><small>Post-Doctoral Research Associate</small></div>
+            </div>
+            <div class="timeline-item">
+              <span>2023–2024</span>
+              <div><strong>University of Tokyo</strong><small>Post-Doctoral Research Associate</small></div>
+            </div>
+            <div class="timeline-item">
+              <span>2023</span>
+              <div><strong>IIT Roorkee</strong><small>Ph.D., Chemical Engineering</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research section-pad" id="research">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Research</p>
+          <h2>Research themes</h2>
+          <p>
+            A connected program in rheology, interface dynamics, advanced visualization,
+            miniaturized flow systems, computational modelling, and emerging biomedical applications.
+          </p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card reveal">
+            <span class="card-index">01</span>
+            <div class="research-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M14 48c8-18 15-27 24-27 6 0 10 5 12 12"/>
+                <path d="M14 48h38"/>
+                <path d="M16 43c7-8 13-12 20-12 6 0 11 3 16 9"/>
+              </svg>
+            </div>
+            <h3>Rheology & Advanced Flow Visualization</h3>
+            <p>
+              Characterization and visualization of complex-flow behaviour using rheological
+              measurements, high-speed imaging and image-based analysis to resolve transient,
+              confined and interfacial transport phenomena.
+            </p>
+            <div class="tag-row">
+              <span>Rheology</span><span>High-speed imaging</span><span>Flow visualization</span>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">02</span>
+            <div class="research-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M9 19c12 0 13 10 23 10s11-10 23-10"/>
+                <path d="M9 45c12 0 13-10 23-10s11 10 23 10"/>
+                <circle cx="32" cy="32" r="5"/>
+              </svg>
+            </div>
+            <h3>Multiphase Flow & Interfacial Transport</h3>
+            <p>
+              Liquid–liquid and gas–liquid hydrodynamics, slug flow, thin-film formation,
+              wettability transitions, mass transfer, pressure drop and interface dynamics.
+            </p>
+            <div class="tag-row">
+              <span>Slug flow</span><span>Wettability</span><span>Mass transfer</span>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">03</span>
+            <div class="research-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M8 49c7-20 16-29 24-29s17 9 24 29"/>
+                <path d="M14 44c8-11 13-16 18-16s10 5 18 16"/>
+                <circle cx="32" cy="18" r="4"/>
+              </svg>
+            </div>
+            <h3>CFD & Computational Multiphysics</h3>
+            <p>
+              Finite-volume and finite-element modelling of multiphase flow, interface capturing,
+              fluid–structure interaction, porous media and coupled transport phenomena.
+            </p>
+            <div class="tag-row">
+              <span>VOF</span><span>FSI</span><span>COMSOL</span>
+            </div>
+          </article>
+          <article class="research-card reveal">
+            <span class="card-index">04</span>
+            <div class="research-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M9 19c12 0 13 10 23 10s11-10 23-10"/>
+                <path d="M9 45c12 0 13-10 23-10s11 10 23 10"/>
+                <circle cx="32" cy="32" r="5"/>
+              </svg>
+            </div>
+            <h3>Microfluidics & Process Intensification</h3>
+            <p>
+              Mini- and millifluidic reactors, serpentine and helical geometries, secondary-flow
+              enhancement, extraction, double emulsions and intensified transport processes.
+            </p>
+            <div class="tag-row">
+              <span>Microreactors</span><span>Helical coils</span><span>Extraction</span>
+            </div>
+          </article>
+
+          <article class="research-card reveal">
+            <span class="card-index">05</span>
+            <div class="research-icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64">
+                <path d="M26 8h12l2 18 8 20a8 8 0 0 1-7 11H23a8 8 0 0 1-7-11l8-20z"/>
+                <path d="M22 40h20"/>
+                <circle cx="27" cy="47" r="2"/>
+                <circle cx="37" cy="50" r="2"/>
+              </svg>
+            </div>
+            <h3>Biomedical Transport & Drug Delivery</h3>
+            <p>
+              Hollow microneedles, transdermal drug delivery, free-flow/porous-interface coupling,
+              pharmacokinetics, fluid–structure interaction and Bayesian optimization.
+            </p>
+            <div class="tag-row">
+              <span>Microneedles</span><span>Porous media</span><span>Optimization</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project section-pad" id="project">
+      <div class="container project-shell reveal">
+        <div class="project-copy">
+          <p class="eyebrow light">Current funded research</p>
+          <h2>Smart Micro-emulsion Printing</h2>
+          <p>
+            An experimental and computational research program focused on controlled droplet
+            generation, rheology-informed printing behaviour and advanced visualization of
+            interfacial dynamics in liquid–liquid printing environments.
+          </p>
+
+          <div class="project-meta">
+            <div><span>Role</span><strong>Principal Investigator</strong></div>
+            <div><span>Year</span><strong>2026</strong></div>
+            <div><span>Project Amount</span><strong>₹6.96 million</strong></div>
+          </div>
+
+          <div class="tag-row on-dark">
+            <span>Droplet dynamics</span>
+            <span>High-speed imaging</span>
+            <span>CFD</span>
+            <span>Interfacial transport</span>
+          </div>
+        </div>
+
+        <div class="project-graphic" aria-hidden="true">
+          <svg viewBox="0 0 520 420">
+            <defs>
+              <linearGradient id="jet" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0%" stop-color="#67e8f9"/>
+                <stop offset="100%" stop-color="#22c55e"/>
+              </linearGradient>
+            </defs>
+            <rect x="205" y="30" width="110" height="85" rx="18" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.2)"/>
+            <path d="M250 115h20v52c0 13-4 24-10 34-6-10-10-21-10-34z" fill="#dbeafe"/>
+            <path d="M260 174c0 0-30 35-30 66a30 30 0 0 0 60 0c0-31-30-66-30-66z" fill="url(#jet)" opacity=".95"/>
+            <circle cx="260" cy="322" r="38" fill="#fb7185" opacity=".95"/>
+            <circle cx="260" cy="322" r="17" fill="#071a2c"/>
+            <path d="M75 355c70-20 120-20 185 0s120 20 185 0" fill="none" stroke="rgba(255,255,255,.24)" stroke-width="18" stroke-linecap="round"/>
+            <path d="M75 355c70-20 120-20 185 0s120 20 185 0" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="publications section-pad" id="publications">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Selected publications</p>
+          <h2>Recent and representative work</h2>
+        </div>
+
+        <div class="publication-list">
+          <article class="pub-card reveal">
+            <div class="pub-year">2026</div>
+            <div class="pub-main">
+              <p class="pub-journal">Chemical Engineering Journal · 538 · 176974</p>
+              <h3>Integrating experiments, numerical simulations and Bayesian optimisation to maximise drug permeability of hollow pyramidal microneedle arrays</h3>
+              <p>Ravi Prakash, Rahul Nadda, Abraham M. Abraham, Tahir Emre Yalcin, Ryan F. Donnelly, Diganta Bhusan Das</p>
+            </div>
+            <a class="pub-link" href="https://doi.org/10.1016/j.cej.2026.176974" target="_blank" rel="noopener" aria-label="Open publication DOI">↗</a>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-year">2026</div>
+            <div class="pub-main">
+              <p class="pub-journal">Chemical Engineering & Processing: Process Intensification · 224 · 110799</p>
+              <h3>Hydrodynamics and mass transfer in miniaturized helical coil for process intensification</h3>
+              <p>Pushpender Chaudhary, Ravi Prakash, Vimal Kumar, K. D. P. Nigam, Sumana Ghosh</p>
+            </div>
+            <a class="pub-link" href="https://doi.org/10.1016/j.cep.2026.110799" target="_blank" rel="noopener" aria-label="Open publication DOI">↗</a>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-year">2025</div>
+            <div class="pub-main">
+              <p class="pub-journal">International Journal of Pharmaceutics · 686 · 126309</p>
+              <h3>Numerical modelling for coupled flow, transport, pharmacokinetic and pharmacodynamic of tablet-loaded hollow microneedle patch for transdermal drug delivery</h3>
+              <p>Ravi Prakash, Rahul Nadda, Diganta Bhusan Das, Ryan F. Donnelly</p>
+            </div>
+            <a class="pub-link" href="https://doi.org/10.1016/j.ijpharm.2025.126309" target="_blank" rel="noopener" aria-label="Open publication DOI">↗</a>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-year">2023</div>
+            <div class="pub-main">
+              <p class="pub-journal">Physics of Fluids · 35 · 127117</p>
+              <h3>A numerical study on the effect of wall wettability on film formation in liquid–liquid slug flow</h3>
+              <p>Ravi Prakash, Sumana Ghosh</p>
+            </div>
+            <a class="pub-link" href="https://doi.org/10.1063/5.0174878" target="_blank" rel="noopener" aria-label="Open publication DOI">↗</a>
+          </article>
+
+          <article class="pub-card reveal">
+            <div class="pub-year">2019</div>
+            <div class="pub-main">
+              <p class="pub-journal">Chemical Engineering Journal · 369 · 489–497</p>
+              <h3>Liquid-liquid mass transfer in a serpentine miniature geometry — effect on pressure drop</h3>
+              <p>Ravi Prakash, Raj Kumar Verma, Sumana Ghosh</p>
+            </div>
+            <a class="pub-link" href="https://doi.org/10.1016/j.cej.2019.03.064" target="_blank" rel="noopener" aria-label="Open publication DOI">↗</a>
+          </article>
+        </div>
+
+        <div class="section-cta reveal">
+          <a class="btn btn-primary" href="https://scholar.google.com/citations?user=pQ_QZ_EAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener">
+            View full publication profile
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="innovation section-pad" id="innovation">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Innovation</p>
+          <h2>Patents & technology development</h2>
+        </div>
+
+        <div class="patent-grid">
+          <article class="patent-card reveal">
+            <span class="patent-year">2026</span>
+            <h3>A low-cost millifluidic device and method for production of double emulsion</h3>
+            <p>Assignee: IIT Roorkee</p>
+          </article>
+
+          <article class="patent-card reveal">
+            <span class="patent-year">2025</span>
+            <h3>A heaving point absorber wave energy converter for generating electricity from ocean energy</h3>
+            <p>Assignee: IIT Roorkee, ONGC</p>
+          </article>
+
+          <article class="patent-card reveal">
+            <span class="patent-year">2023</span>
+            <h3>Trapezoidal with fin as float design of point absorber wave energy converter</h3>
+            <p>Assignee: IIT Roorkee, ONGC</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="container contact-shell reveal">
+        <div>
+          <p class="eyebrow light">Collaborate</p>
+          <h2>Research at the intersection of rheology, visualization and interfaces.</h2>
+          <p>
+            RAVI Lab welcomes research collaborations and motivated students interested in
+            rheology, advanced flow visualization, multiphase flow, microfluidics,
+            computational modelling and emerging transport applications.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <span>Principal Investigator</span>
+          <strong>Dr. Ravi Prakash</strong>
+          <p>Department of Chemical Engineering<br>National Institute of Technology Agartala</p>
+          <a href="mailto:pravi728@gmail.com">pravi728@gmail.com</a>
+          <div class="contact-social">
+            <a href="https://scholar.google.com/citations?user=pQ_QZ_EAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://orcid.org/0000-0003-1673-9136" target="_blank" rel="noopener">ORCID</a>
+            <a href="https://vidwan.inflibnet.ac.in/profile/711031" target="_blank" rel="noopener">Vidwan</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>RAVI Lab</strong>
+        <span>Rheology · Advanced Visualization · Interfaces · Multiphase Flow</span>
+      </div>
+      <p>© <span id="year"></span> RAVI Lab, NIT Agartala.</p>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
