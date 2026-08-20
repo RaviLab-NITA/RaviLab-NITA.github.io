@@ -20,7 +20,7 @@
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand brand-logo" href="#top" aria-label="RAVI Lab home">
-        <img src="assets/RAVI-Lab-logo.png" alt="RAVI Lab — Rheology and Advanced Visualization of Interfaces" />
+        <img src="RAVI-Lab-logo.png" alt="RAVI Lab — Rheology and Advanced Visualization of Interfaces" />
       </a>
 
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
@@ -30,6 +30,7 @@
       <nav class="primary-nav" id="primaryNav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#research">Research</a>
+        <a href="#research-images">Research Images</a>
         <a href="#project">Current Project</a>
         <a href="#publications">Publications</a>
         <a href="#innovation">Patents</a>
@@ -55,7 +56,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#research">Explore Research</a>
-            <a class="btn btn-secondary" href="assets/Ravi-Prakash-CV.pdf" target="_blank" rel="noopener">View CV</a>
+            <a class="btn btn-secondary" href="Ravi-Prakash-CV.pdf" target="_blank" rel="noopener">View CV</a>
           </div>
 
           <div class="profile-strip">
@@ -72,70 +73,34 @@
           </div>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Abstract visual representing multiphase flow and microfluidics">
-          <div class="visual-panel">
-            <svg class="hero-svg" viewBox="0 0 680 560" role="img" aria-labelledby="heroTitle heroDesc">
-              <title id="heroTitle">Multiphase flow visualization</title>
-              <desc id="heroDesc">Abstract channels, droplets and streamlines representing microfluidics and interfacial transport.</desc>
+        <div class="hero-visual reveal" aria-label="Research images from RAVI Lab publications">
+          <div class="publication-mosaic">
+            <a class="mosaic-item mosaic-main" href="https://doi.org/10.1016/j.cej.2022.135194" target="_blank" rel="noopener">
+              <img src="pub-wettability-flow-patterns.webp"
+                   alt="Published experimental images of liquid-liquid slug, droplet and encapsulated flow patterns">
+              <span class="mosaic-label"><b>Multiphase flow</b><small>Experimental visualization</small></span>
+            </a>
 
-              <defs>
-                <linearGradient id="fluidA" x1="0" x2="1">
-                  <stop offset="0%" stop-color="#2dd4bf"/>
-                  <stop offset="100%" stop-color="#38bdf8"/>
-                </linearGradient>
-                <linearGradient id="fluidB" x1="0" x2="1">
-                  <stop offset="0%" stop-color="#f59e0b"/>
-                  <stop offset="100%" stop-color="#fb7185"/>
-                </linearGradient>
-                <filter id="softGlow">
-                  <feGaussianBlur stdDeviation="8" result="blur"/>
-                  <feMerge>
-                    <feMergeNode in="blur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
-              </defs>
+            <a class="mosaic-item mosaic-top" href="https://doi.org/10.1016/j.ces.2023.119388" target="_blank" rel="noopener">
+              <img src="pub-bubble-visualization.webp"
+                   alt="Published high-speed bubble visualization and reconstructed gas-liquid interface">
+              <span class="mosaic-label"><b>Advanced visualization</b><small>Interface reconstruction</small></span>
+            </a>
 
-              <rect x="55" y="90" width="570" height="380" rx="56" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.12)"/>
+            <a class="mosaic-item mosaic-bottom-left" href="https://doi.org/10.1016/j.cep.2026.110799" target="_blank" rel="noopener">
+              <img src="pub-helical-reactor.webp"
+                   alt="Published helical mini-reactor geometries used for process intensification">
+              <span class="mosaic-label"><b>Process intensification</b><small>Helical mini-reactors</small></span>
+            </a>
 
-              <path d="M110,195 C210,115 325,270 435,180 C505,123 560,150 590,182"
-                    fill="none" stroke="url(#fluidA)" stroke-width="25" stroke-linecap="round" opacity=".9"/>
-              <path d="M110,350 C218,275 315,420 430,332 C495,282 550,300 590,325"
-                    fill="none" stroke="rgba(255,255,255,.16)" stroke-width="28" stroke-linecap="round"/>
-              <path d="M110,350 C218,275 315,420 430,332 C495,282 550,300 590,325"
-                    fill="none" stroke="url(#fluidB)" stroke-width="8" stroke-linecap="round"/>
-
-              <ellipse cx="230" cy="191" rx="55" ry="28" fill="#071a2c" stroke="#6ee7d8" stroke-width="5"/>
-              <ellipse cx="408" cy="198" rx="39" ry="24" fill="#071a2c" stroke="#6ee7d8" stroke-width="5"/>
-              <ellipse cx="280" cy="350" rx="46" ry="27" fill="#071a2c" stroke="#fbbf24" stroke-width="5"/>
-              <ellipse cx="500" cy="323" rx="34" ry="22" fill="#071a2c" stroke="#fb7185" stroke-width="5"/>
-
-              <circle cx="170" cy="133" r="12" fill="#5eead4" filter="url(#softGlow)"/>
-              <circle cx="538" cy="406" r="15" fill="#f59e0b" filter="url(#softGlow)"/>
-              <circle cx="470" cy="120" r="8" fill="#38bdf8"/>
-              <circle cx="145" cy="418" r="8" fill="#fb7185"/>
-
-              <g opacity=".45" fill="none" stroke="#dbeafe" stroke-width="2">
-                <path d="M145 237 C210 270 260 270 315 236"/>
-                <path d="M355 255 C420 280 490 275 548 240"/>
-                <path d="M160 392 C235 433 325 426 390 385"/>
-              </g>
-            </svg>
-
-            <div class="visual-label label-1">
-              <span>01</span>
-              <strong>Rheology & Interfaces</strong>
-            </div>
-            <div class="visual-label label-2">
-              <span>02</span>
-              <strong>Advanced Visualization</strong>
-            </div>
-            <div class="visual-label label-3">
-              <span>03</span>
-              <strong>CFD + Microfluidics</strong>
-            </div>
+            <a class="mosaic-item mosaic-bottom-right" href="https://doi.org/10.1016/j.cej.2026.176974" target="_blank" rel="noopener">
+              <img src="pub-microneedle-transport.webp"
+                   alt="Published hollow microneedle and skin transport model">
+              <span class="mosaic-label"><b>Biomedical transport</b><small>Microneedle systems</small></span>
+            </a>
           </div>
-        </div>
+          <p class="hero-image-note">Selected images from RAVI Lab publications · click an image for the source article</p>
+        </div></div>
       </div>
 
       <div class="container stat-grid reveal">
@@ -312,7 +277,80 @@
       </div>
     </section>
 
-    <section class="project section-pad" id="project">
+    
+    <section class="research-images section-pad" id="research-images">
+      <div class="container">
+        <div class="section-heading compact reveal">
+          <p class="eyebrow">Research in images</p>
+          <h2>Experiments and simulations from our publications</h2>
+          <p>
+            Representative research visuals from published work in interfacial flow,
+            advanced imaging, miniaturized process systems and biomedical transport.
+          </p>
+        </div>
+
+        <div class="publication-gallery">
+          <article class="publication-image-card reveal">
+            <a class="publication-image" href="https://doi.org/10.1016/j.cej.2022.135194" target="_blank" rel="noopener">
+              <img src="pub-wettability-flow-patterns.webp"
+                   alt="Photographic liquid-liquid flow patterns including aqueous slug, organic slug, droplet and encapsulated slug">
+            </a>
+            <div class="publication-image-copy">
+              <span>Interfacial transport · 2022</span>
+              <h3>Wettability-controlled liquid–liquid flow</h3>
+              <p>High-speed visualization of slug, droplet, thin-film and encapsulated flow regimes across a wettability transition.</p>
+              <a href="https://doi.org/10.1016/j.cej.2022.135194" target="_blank" rel="noopener">Source article ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-image-card reveal">
+            <a class="publication-image" href="https://doi.org/10.1016/j.ces.2023.119388" target="_blank" rel="noopener">
+              <img src="pub-bubble-visualization.webp"
+                   alt="Experimental interface extraction and three-dimensional reconstruction of a slug bubble">
+            </a>
+            <div class="publication-image-copy">
+              <span>Advanced visualization · 2024</span>
+              <h3>Image-based reconstruction of slug-bubble interfaces</h3>
+              <p>High-speed imaging, interface extraction and axisymmetric reconstruction used to quantify gas–liquid mass-transfer hydrodynamics.</p>
+              <a href="https://doi.org/10.1016/j.ces.2023.119388" target="_blank" rel="noopener">Source article ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-image-card reveal">
+            <a class="publication-image" href="https://doi.org/10.1016/j.cep.2026.110799" target="_blank" rel="noopener">
+              <img src="pub-helical-reactor.webp"
+                   alt="Three helical mini-reactor geometries with different coil pitches and diameters">
+            </a>
+            <div class="publication-image-copy">
+              <span>Process intensification · 2026</span>
+              <h3>Helical mini-reactors for intensified extraction</h3>
+              <p>Geometry-dependent secondary flows are combined with experiments and CFD to improve mixing and liquid–liquid mass transfer.</p>
+              <a href="https://doi.org/10.1016/j.cep.2026.110799" target="_blank" rel="noopener">Source article ↗</a>
+            </div>
+          </article>
+
+          <article class="publication-image-card reveal">
+            <a class="publication-image" href="https://doi.org/10.1016/j.cej.2026.176974" target="_blank" rel="noopener">
+              <img src="pub-microneedle-transport.webp"
+                   alt="Three-dimensional hollow microneedle drug delivery system interacting with multilayer skin">
+            </a>
+            <div class="publication-image-copy">
+              <span>Biomedical transport · 2026</span>
+              <h3>Coupled hollow-microneedle and skin transport</h3>
+              <p>Finite-element modelling links fluid delivery through hollow microneedles with transport through multilayer porous skin.</p>
+              <a href="https://doi.org/10.1016/j.cej.2026.176974" target="_blank" rel="noopener">Source article ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="figure-credit reveal">
+          Research images are reproduced from the cited publications for laboratory-profile presentation.
+          Publisher reuse conditions should be verified before final public deployment.
+        </p>
+      </div>
+    </section>
+
+<section class="project section-pad" id="project">
       <div class="container project-shell reveal">
         <div class="project-copy">
           <p class="eyebrow light">Current funded research</p>
